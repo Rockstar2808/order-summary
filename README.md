@@ -24,7 +24,6 @@ Users should be able to:
 ### Screenshot
 
 ![](Screenshot1.png)
-![](Screenshot2.png)
 ### Links
 
 - Solution URL: [Check out the solution here](https://github.com/Rockstar2808/order-summary.git)
