@@ -5,33 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Frontend Mentor | Order summary card</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .card{
+      height: 600px;
+      width: 450px;
+      top:50%;
+      margin-top: 8%;
+      left: 50%;
+      display: inline-block;
+      text-align: center;
+      background: white ;
+    }
+    body{
+      font-family: 'Red Hat Display', sans-serif;
+      text-align: center;
+      background: url("images/pattern-background-desktop.svg") repeat-x hsl(225, 100%, 94%) top;
+    }
+    p{
+      font-weight: bold;
+      font-size: 16px;
+      padding-left: 15%;
+      padding-right: 15%;
+      color: hsl(224, 23%, 55%);
+      margin-bottom: 2em;
+    }
+    .smallCard{
+      border-radius: 15px;
+      background-color:  hsl(225, 100%, 98%);
+      height: 80px;
+      width: 350px;
+      bottom: 20px;
+      display: flex;
+      position: relative;
+      left: 10%;
+      align-items: center;
+    }
+    #payment{
+      position: relative;
+      background-color:  hsl(245, 75%, 52%);
+      color: white;
+      height: 50px;
+      width: 350px;
+      border-radius: 15px;
+      font-weight: bold;
+      border-color: white;
+    }
+    #cancel {
+      position: relative;
+      background-color: transparent;
+      height: 50px;
+      width: 350px;
+      font-weight: bold;
+      border: none;
+    }
+    #cancel:hover{
+      color: hsl(245, 75%, 52%);
+    }
+    #details{
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 0;
+    }
+    h3{
+      font-weight: bold;
+    }
+
+    a{
+      position: relative;
+      left: 100px;
+    }
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="card" style="border-radius: 15px">
+  <img src="images/illustration-hero.svg" alt="illustration-hero icon" style="border-top-left-radius: 15px; border-top-right-radius: 15px">
+  <h1 style="color: hsl(223, 47%, 23%);">Order Summary</h1>
+  <p>You cean now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+  <div class="smallCard">
+    <img src="images/icon-music.svg" alt="music logo" style="float: left; margin: 10px;">
+    <div id="details">
+      <h3 style="border: none;padding: 0; margin: 0;">Annual Plan</h3>
+      <p style="border: none;padding: 0; margin: 0;">$59.99/year</p>
+    </div>
+    <a href="#" style="font-weight: bolder">Change</a>
   </div>
+  <div>
+    <input id="payment" type="submit" value="Proceed to Payment"><br>
+    <button id="cancel">Cancel Order</button>
+  </div>
+</div>
+
+<!--  <div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--  </div>-->
 </body>
 </html>
